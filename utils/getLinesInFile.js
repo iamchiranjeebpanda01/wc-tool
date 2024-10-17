@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 /**
  * This function reads a file asynchronously and returns the number of lines in the file.
  *
@@ -24,3 +26,5 @@ function getLinesInFile(filepath) {
         })
     })
 }
+
+module.exports = getLinesInFile

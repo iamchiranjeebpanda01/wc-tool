@@ -4,6 +4,7 @@ const { getFileStats } = require("./utils/getFileSize.js")
 const getLinesInFile = require("./utils/getLinesInFile.js");
 const getWordsInFile = require("./utils/getWordsInFile.js");
 const getCharsInFile = require("./utils/getCharsInFile.js");
+const getSizeLinesAndWords = require("./utils/getSizeLinesAndWords.js");
 
 /*
 The process.argv property is an inbuilt application programming interface of the process module which is used to get 
@@ -58,8 +59,10 @@ if(args[0] === "ccwc" && args[2] !== undefined){
         }
     }
 }
-else{
+else if(args[0] === "ccwc" && args[2] == undefined && args[1] !== undefined) {
     //! Outputs the number of bytes, lines and words
+    //TODO Check if File path is valid or not
 
-
+    filepath = args[1]
+    getSizeLinesAndWords(filepath)
 }
