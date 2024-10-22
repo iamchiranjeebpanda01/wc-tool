@@ -4,7 +4,7 @@
 ccwc is my implemention of a command-line tool similar to the Unix `wc` command that counts the number of words, lines, characters, and bytes in a given file or standard input.
 
 
-**Installation:**
+**Installation and Usage: **
 1. Download the directory from `https://github.com/iamchiranjeebpanda01/wc-tool.git`.
 2. Run ```cd wc-tool```
 3. Run ```sudo npm link``` if using the root user, ```npm link``` otherwise.
