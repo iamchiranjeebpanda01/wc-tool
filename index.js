@@ -1,5 +1,6 @@
+#!/usr/bin/env node
+
 const process = require("process");
-const fs = require("fs");
 const { getFileStats } = require("./utils/getFileSize.js")
 const getLinesInFile = require("./utils/getLinesInFile.js");
 const getWordsInFile = require("./utils/getWordsInFile.js");
@@ -13,15 +14,18 @@ the arguments passed to the node.js process when run in the command line.
     -> process.argv[0]: is the process execution path
     -> process.argv[1]: is the path for the js file.
     -> process.argv[2] and more: other items in the array are the additional arguments passed by the user.
-*/
+*/// if(args[0] === "ccwc" && args[2] !== undefined){
+//Todo: Check if File path is valid or not
+//Todo: Use vitest to write unit tests for all the functions
 
 const args = process.argv.slice(2)
-const options = args[1]
+const options = args[0]
 
 
 
-if(args[0] === "ccwc" && args[2] !== undefined){
-    filepath = args[2]
+if(args[0] !== undefined && args[1] !== undefined){
+    //TODO Check if File path is valid or not
+    filepath = args[1]
     switch(options){
         //! Outputs the number of bytes in the file
         case "-c": 
@@ -59,10 +63,10 @@ if(args[0] === "ccwc" && args[2] !== undefined){
         }
     }
 }
-else if(args[0] === "ccwc" && args[2] == undefined && args[1] !== undefined) {
+else if(args[1] == undefined && args[0] !== undefined) {
     //! Outputs the number of bytes, lines and words
-    //TODO Check if File path is valid or not
+    //Todo: Check if File path is valid or not
 
-    filepath = args[1]
+    filepath = args[0]
     getSizeLinesAndWords(filepath)
 }
