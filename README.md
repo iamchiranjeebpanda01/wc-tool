@@ -6,9 +6,9 @@ ccwc is my implemention of a command-line tool similar to the Unix `wc` command 
 
 **Installation:**
 1. Download the directory from `https://github.com/iamchiranjeebpanda01/wc-tool.git`.
-2. Run ``cd wc-tool``
-3. Run ``sudo npm link`` if using the root user, ``npm link`` otherwise.
-4. Use `` ccwc `` along with the available command line options or pipe inputs from a different command.
+2. Run ```cd wc-tool```
+3. Run ```sudo npm link``` if using the root user, ```npm link``` otherwise.
+4. Use ``` ccwc ``` along with the available command line options or pipe inputs from a different command.
 
 1. **Command-Line Options:**
    - `-c`: Count the number of bytes.
