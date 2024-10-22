@@ -7,8 +7,6 @@ const getCharsInFile = require("./utils/getCharsInFile.js");
 const getSizeLinesAndWords = require("./utils/getSizeLinesAndWords.js");
 const checkfilePathIsValid = require("./utils/checkFilePathIsValid.js");
 
-
-//Todo: Use vitest to write unit tests for all the functions
 const args = process.argv.slice(2);
 const options = args[0];
 let inputData = '';
