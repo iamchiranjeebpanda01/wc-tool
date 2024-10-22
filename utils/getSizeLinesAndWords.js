@@ -14,7 +14,7 @@ const getSizeLinesAndWords = async (filepath) => {
         words = await getWordsInFile(filepath)
     } catch(err){
         console.error(err)
-        return
+        process.exit(1)
     }
 
     console.log(`${sizeOfFile} ${lines} ${words} ${filepath}`)

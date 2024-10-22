@@ -2,7 +2,7 @@
   "name": "wc_tool",
   "version": "1.0.0",
   "bin": {
-    "ccwc": "./index.js"
+    "ccwc": "./src/index.js"
   },
   "description": "",
   "main": "index.js",
